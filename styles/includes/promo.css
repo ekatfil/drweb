@@ -139,7 +139,8 @@
         font-size: 24px;
     }
     .promo__mobile-image-img {
-        height: 253px;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -164,6 +165,6 @@
         border-radius: 16px;
     }
     .promo__mobile-image-img {
-        height: 165px;
+        width: 110%;
     }
 }
