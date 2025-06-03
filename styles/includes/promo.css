@@ -1,8 +1,8 @@
 /* Promo section */
-
 .promo {
     padding-top: 104px;
     margin-bottom: 64px;
+    overflow-x: hidden;
 }
 
 .promo__info {
@@ -15,7 +15,6 @@
 
 .promo__logo {
     width: 268px;
-    height: 50px;
 }
 
 .promo__logo-img {
@@ -53,9 +52,118 @@
     width: 223px;
 }
 
+.container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
 .promo__image {
     padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
 .promo__image-img {
     width: 100%;
+    max-width: 1186px;
+}
+
+.promo__mobile-image {
+    display: none; 
+    position: relative;
+    justify-content: center;
+}
+
+.promo__mobile-image-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2; 
+}
+
+.gray-block {
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 85%; 
+    bottom: 0; 
+    z-index: 1; 
+    border-radius: 32px;
+}
+
+
+@media (max-width: 768px) {
+    .promo {
+        padding-top: 86.5px;
+        margin-bottom: 64.5px;
+    }
+    .promo__info {
+        margin-bottom: 64px;
+    }
+    .promo__text {
+        gap: 8px;
+    }
+    .promo__title {
+        font-size: 48px;
+    }
+    .promo__subtitle {
+        font-size: 24px;
+    }
+    .promo__image {
+        display: none;
+    }
+    .promo__mobile-image {
+        display: flex;
+    }
+    .promo__mobile-image-img {
+        height: 315px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo {
+        padding-top: 48px;
+        margin-bottom: 32px;
+    }
+    .promo__info {
+        margin-bottom: 32px;
+    }
+    .promo__title {
+        font-size: 32px;
+    }
+    .promo__subtitle {
+        font-size: 24px;
+    }
+    .promo__mobile-image-img {
+        height: 253px;
+    }
+}
+
+@media (max-width: 320px) {
+    .promo {
+        padding-top: 40px;
+        margin-bottom: 24px;
+    }
+    .promo__info {
+        margin-bottom: 24px;
+    }
+    .promo__logo {
+        width: 170px;
+    }
+    .promo__title {
+        font-size: 20px;
+    }
+    .promo__subtitle {
+        font-size: 16px;
+    }
+    .gray-block {
+        border-radius: 16px;
+    }
+    .promo__mobile-image-img {
+        height: 165px;
+    }
 }

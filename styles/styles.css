@@ -16,6 +16,7 @@
     --color-border-primary: #CCCCCC;
     --color-disabled-text: #B3B3B3;
     --color-bg-secondary: #F2F2F2;
+    --container-x-gap: 12px;
 }
 
 body {
@@ -59,7 +60,7 @@ body {
     }
 
     :root {
-        --container-x-gap: 1rem;
+        --container-x-gap: 16px;
     }
 }
 
@@ -75,7 +76,7 @@ body {
     }
 
     :root {
-        --container-x-gap: 1.25rem;
+        --container-x-gap: 32px;
     }
 }
 
