@@ -1,0 +1,61 @@
+/* Promo section */
+
+.promo {
+    padding-top: 104px;
+    margin-bottom: 64px;
+}
+
+.promo__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 32px;
+    gap: 32px;
+}
+
+.promo__logo {
+    width: 268px;
+    height: 50px;
+}
+
+.promo__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.promo__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.promo__title {
+    font-weight: 800;
+    font-size: 86px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.promo__subtitle {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.button--promo {
+    width: 223px;
+}
+
+.promo__image {
+    padding-top: 30px;
+}
+.promo__image-img {
+    width: 100%;
+}

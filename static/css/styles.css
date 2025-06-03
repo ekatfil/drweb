@@ -1,0 +1,119 @@
+@import 'includes/fonts.css';
+@import 'includes/promo.css';
+@import 'includes/product.css';
+@import 'includes/features.css';
+@import 'includes/footer.css';
+
+:root {
+    /* Colors */
+    --color-text-primary: #000000;
+    --color-text-secondary: #666666;
+    --color-primary-active: #69B42E;
+    --color-primary-hover: #80BF4D;  
+    --color-text-tertiary: #FFFFFF;
+    --color-icon-primary: #1A1A1A;
+    --color-text-placeholder: #D9D9D9;
+    --color-border-primary: #CCCCCC;
+    --color-disabled-text: #B3B3B3;
+    --color-bg-secondary: #F2F2F2;
+}
+
+body {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+    max-width: 1168px;
+    padding: 0 var(--container-x-gap);
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-10 {
+    gap: 2.5rem;
+}
+
+.py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* Для экранов шириной 480px и более */
+@media (min-width: 480px) {
+    .sm\:gap-12 {
+        gap: 3rem;
+    }
+
+    .sm\:py-12 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    :root {
+        --container-x-gap: 1rem;
+    }
+}
+
+/* Для экранов шириной 768px и более */
+@media (min-width: 768px) {
+    .md\:gap-16 {
+        gap: 4rem;
+    }
+
+    .md\:py-16 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    :root {
+        --container-x-gap: 1.25rem;
+    }
+}
+
+/* Для экранов шириной 1280px и более */
+@media (min-width: 1280px) {
+    .lg\:gap-22 {
+        gap: 5.5rem;
+    }
+
+    .lg\:py-22 {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+    }
+
+    :root {
+        --container-x-gap: 0;
+    }
+}
+
+
+/* Button */
+.button {
+    display: block;
+    background-color: var(--color-primary-active);
+    color: var(--color-text-tertiary);
+    min-width: 110px;
+    border-radius: 5px;
+    padding: 15px 8px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    &:hover {
+        background-color: var(--color-primary-hover);
+    }
+}
+
+
