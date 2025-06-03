@@ -31,6 +31,13 @@ body {
     width: 100%;
 }
 
+.product-container {
+    margin: 0 auto;
+    max-width: 1168px;
+    padding: 0 var(--container-x-gap);
+    width: 100%;
+}
+
 .flex {
     display: flex;
 }
@@ -96,6 +103,11 @@ body {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .product-container {
+        padding: 0;
+    }
+}
 
 /* Button */
 .button {
