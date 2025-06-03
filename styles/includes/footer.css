@@ -41,6 +41,23 @@
     margin: 0;
 }
 
-.footer__description {
-    margin: 0;
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 48px 0;
+    }
+    .footer__container {
+        display: block;
+    }
+    .footer__description br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        padding: 40px 0;
+    }
+    .footer__content {
+        gap: 8px;
+    }
 }
