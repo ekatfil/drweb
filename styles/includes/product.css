@@ -197,23 +197,16 @@
     }
     .card__title {
         font-size: 20px;
-    }
-}
-
-.mobile-break {
-    display: none;
-}
-
-@media screen and (max-width: 320px) {
-    .product-container {
-        padding: 0;
-    }
-    
+    }    
     .mobile-break {
         display: inline;
     }
     
     .product__text br:not(.mobile-break) {
         display: none;
+    }
+
+    .container {
+        padding: 0!important;
     }
 }
