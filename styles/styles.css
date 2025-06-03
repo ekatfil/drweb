@@ -48,7 +48,6 @@ body {
     padding-bottom: 2.5rem;
 }
 
-/* Для экранов шириной 480px и более */
 @media (min-width: 480px) {
     .sm\:gap-12 {
         gap: 3rem;
@@ -64,7 +63,6 @@ body {
     }
 }
 
-/* Для экранов шириной 768px и более */
 @media (min-width: 768px) {
     .md\:gap-16 {
         gap: 4rem;
@@ -80,7 +78,6 @@ body {
     }
 }
 
-/* Для экранов шириной 1280px и более */
 @media (min-width: 1280px) {
     .lg\:gap-22 {
         gap: 5.5rem;
@@ -96,7 +93,6 @@ body {
     }
 }
 
-/* Button */
 .button {
     display: block;
     background-color: var(--color-primary-active);
